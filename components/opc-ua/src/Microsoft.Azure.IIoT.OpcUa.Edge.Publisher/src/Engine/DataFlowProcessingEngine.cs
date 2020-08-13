@@ -338,7 +338,7 @@ namespace Microsoft.Azure.IIoT.OpcUa.Edge.Publisher.Engine {
         private static readonly Gauge kIoTHubQueueBuffer = Metrics.CreateGauge(
             "iiot_edge_publisher_iothub_queue_size",
             "IoT messages queued sending", kGaugeConfig); 
-            private static readonly Gauge kIoTHubQueueBufferDroppedCount = Metrics.CreateGauge(
+        private static readonly Gauge kIoTHubQueueBufferDroppedCount = Metrics.CreateGauge(
             "iiot_edge_publisher_iothub_queue_dropped_count",
             "IoT messages dropped", kGaugeConfig); 
         private static readonly Gauge kSentMessagesCount = Metrics.CreateGauge(
